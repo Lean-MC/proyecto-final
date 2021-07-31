@@ -2,74 +2,31 @@
     margin:0;
     padding: 0;
     
-}
-/*-------------------------------------------------menu--------------------------------------------------------------------*/
-.menu{
-    background-color: black;
-    height: 75px;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-.logo{
-    color:cornsilk;
-    padding: 10px 80px;
-    font-weight: lighter;
-    font-size: 40px;
-}
-.menu_items{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin-right: 30px;
-}
-.menu_items li{
-    margin: 5px 10px;
-    flex-direction: row;
     
 }
-.menu_items a{
-    display: flex;
-    flex-direction: row;
-    padding-top: auto;
-    padding-bottom: auto;
-    text-decoration: none;
-    font-size: 30px;
-    color:cornsilk;
-    transition: 0.5s;
-}
-.menu_items a:hover{
-    background:rgb(48, 43, 58);
-}   
-@media (max-width:600px){
-    .logo{
-        font-size: 20px;
-    }
-    .menu_items li a{
-        display: none;
-       }
-
+/*-------------------------------------------------menu--------------------------------------------------------------------*/
+.navbar-collapse{
+    flex-direction: row-reverse !important;
 }
 /*----------------------------------------------------menu-------------------------------------------------------*/
 
 /*----------------------------------------------------fondo------------------------------------------------------*/
 
-body{
+body{/*
     background: #c33764; 
     background: -webkit-linear-gradient(to right, #c33764, #1d2671); 
     background: linear-gradient(to right, #c33764, #1d2671); 
-     }
+     */
+    background: rgb(206, 201, 201);
+}
 /*-----------------------------------------------------fondo------------------------------------------------------*/
 
 /*---------------------------------------pie de pagina-----------------------------------------------------------------*/
 footer #pie-de-pagina{
-    color:cornsilk;
+    color:black;
     font-size: 25px;
-    height: 30px;
-    background-color: black;
+    height: 40px;
+    background-color: rgb(241, 237, 237);
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -101,6 +58,10 @@ footer #pie-de-pagina{
         padding-top: 600px;
         padding-bottom: 10px;
         margin: 10px;
+}
+
+.redes button{
+    padding-top: 10px;
 }
      /* --------------------facebook----------------------*/
 .btn--1{
@@ -200,72 +161,98 @@ footer #pie-de-pagina{
             box-shadow: 0 0 10px #0bee4f, 0 0 20px #0bee4f, 0 0 20px #0bee4f;
             color: #434343;
                     } 
-
+                    
+     @media (max-width: 600px) {
+    .btn--1,.btn--2,.btn--3,.btn--4{
+    width: 50%;
+    padding: 10px;
+    }
+    }
 
 /* --------------------------------------------titulos cursos internacionales---------------------------------------------------------------*/
-.cursos-int{
-    max-width: 1024px;
-    width: 100%;
-    padding: 45px 20px;
-    margin: 20px auto;
-    margin-top: 150px;
-    padding-bottom:300px ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.cursosint {
+	margin: 0;
+	padding-top: 150px;
+	width: 100%;
 }
 
-.tituloInt h2{
-    padding: 20px;
-    text-align: center;
-    font-size: 3rem;
-    color: rosybrown;
-}
-.tituloInt p{
-    padding: 20px;
-    text-align: left;
-    font-size:1.5rem;
-    color: cornsilk;
-}
-.container-int h2{
-    padding: 20px;
-    text-align: left;
-    font-size: 3rem;
-    color: blue;
+.cursosint div {
+	box-sizing: border-box;
+	min-width: 250px;
+	padding: 50px;
+    border-radius: 20px;
 }
 
-.container-int p{
-    padding: 20px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: cornsilk;
-}
-
-.container-int a{
+.MoreInfo a{
     float: right;
-    font-size: 1.5rem;
+    font-size: 20px;
     text-decoration: none;
-    color: red;
-    cursor: pointer;
+    margin: 10px;
+    color:red;
+    
 }
-@media screen and (max-width:600px){
-    .container-int p{
-        font-size: 12px;
-    }
-    .container-int h2{
-        font-size: 15px;
 
-    }
-    .container-int a{
-        font-size: 10px;
-    }
-    .tituloInt p{
-        display: none;
-    }
-    .tituloInt h2{
-        font-size: 20px;
-       }
-    }
+.titulo-int {
+	color: black;
+	background-color: #E6EBE0;
+}
+
+.info-int {
+	color: black;
+	background-color: #F4F1BB;
+}
+
+.c1 {
+	color: black;
+	background-color: #9BC1BC;
+}
+
+.c2 {
+	color: black;
+	background-color: #36C9C6;
+}
+
+.c3 {
+	color: cornsilk;
+	background-color: #ED6A5A;
+}
+
+.cursosint {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.titulo-int, .info-int, .c1, .c2, .c3 {
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	.info-int, .c1, .c2, .c3 {
+		width: 50%;
+	}
+}
+
+@media (min-width: 800px) {
+	.titulo-int  {
+		width: 100%;
+	}
+
+	.info-int {
+		width: 100%;
+	}
+
+	.c1, .c2, .c3 {
+		width: 33.33%;
+	}
+
+	.cursosint {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 /*-------------------------------------------------formulario-----------------------------------------------*/
 
  .form-contacto h1{
