@@ -22,20 +22,87 @@ body{/*
 /*-----------------------------------------------------fondo------------------------------------------------------*/
 
 /*---------------------------------------pie de pagina-----------------------------------------------------------------*/
-footer #pie-de-pagina{
-    color:black;
-    font-size: 25px;
-    height: 40px;
-    background-color: rgb(241, 237, 237);
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    margin:0;
-    padding: 0;
+
+    .footer{/* contenedor principal*/
+        background-color:aquamarine;
+        position: absolute;/*para acomodarlo abajo*/
+        bottom: 0;
+        width: 100%;
+        color: white;
+        }
+    
+    .redes-sociales{ /*div redes sociales*/
+        display:flex;
     }
+    .redes-sociales ul{
+        display:flex;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        height: 40px;
+        margin: auto;
+    }
+    .redes-sociales a{
+        padding: 10px;
+    }
+    .social-items{
+        list-style:none;
+    }
+    .social-items a{
+        padding: 10px 20px;
+        font-size: 35px;
+        color: white;
+    }
+    .fa-facebook-square:hover{ /*hover links redes sociales*/
+        color: blue;
+    }
+    .fa-instagram-square:hover{
+        color: violet;
+    }
+    .fa-twitter-square:hover{
+        color: rgba(38, 212, 235, 0);
+    }
+    
+    /*div redes sociales*/
+    
+    .link-footer{
+        background-color: brown;
+        display:flex;
+        margin: auto;
+        height: 75px;
+        width: 100%;
+    }
+    /*div redes*/
+    .link-footer ul{
+        display:flex;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        height: 30px;
+        margin: auto;
+        }
+    .quick-items{
+        list-style:none;
+    }
+    .quick-items a{
+        text-decoration:none;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: azure;
+    }
+    .quick-items a:hover{
+        color: tomato;
+    }
+    /*div redes*/
+    
+    .mensaje-footer{
+        background-color: blue;
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+    }
+
  /* --------------------------------------------------------------------------------------------------------------------*/ 
 /*-----------------------------------------------------home-------------------------------------------------------*/
 
@@ -50,124 +117,6 @@ footer #pie-de-pagina{
     color: cornsilk;
     
 }
-
-.redes{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding-top: 600px;
-        padding-bottom: 10px;
-        margin: 10px;
-}
-
-.redes button{
-    padding-top: 10px;
-}
-     /* --------------------facebook----------------------*/
-.btn--1{
-        display: flex;
-        justify-content: space-around;
-        border-radius: 4px;
-        background-color: transparent;
-        transition: all 500ms ease;
-        border: 2px solid blue;
-        margin-bottom: 40px;
-        font-weight: 700;
-        }
-    .btn--1 a{
-        color: cornsilk;
-        text-decoration: none;
-        font-size: 30px;
-        font-family: 'Kirang Haerang', cursive;
-        }
-    
-    .btn--1:hover{
-        background-color: blue;
-        box-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 20px blue;
-        color: #434343;
-            }
-    /*-----------------------instagram-----------------------*/        
-    
-    .btn--2{
-        display: flex;
-        justify-content: space-around;
-        border-radius: 4px;
-        background-color: transparent;
-        transition: all 500ms ease;
-        border: 2px solid #f307e733;
-        margin-bottom: 40px;
-        font-weight: 700;
-        }
-    .btn--2 a{
-        color: cornsilk;
-        text-decoration: none;
-        font-size: 30px;
-        font-family: 'Kirang Haerang', cursive;
-            }
-            
-    .btn--2:hover{
-        background-color: #f307e733;
-        box-shadow: 0 0 10px #f307e733, 0 0 20px #f307e733, 0 0 20px #f307e733;
-        color: #434343;
-    }
-        
-
-               
-            
-    /*-------------------------------twiter--------------------------*/
-     .btn--3{
-        display: flex;
-        justify-content: space-around;
-        border-radius: 4px;
-        background-color: transparent;
-        transition: all 500ms ease;
-        border: 2px solid #20e2d7;
-        margin-bottom: 40px;
-        font-weight: 700;
-        }
-    .btn--3 a{
-        color:cornsilk;
-        text-decoration: none;
-        font-size: 30px;
-        font-family: 'Kirang Haerang', cursive;
-            }
-            
-    .btn--3:hover{
-        background-color: #20e2d7;
-        box-shadow: 0 0 10px #20e2d7, 0 0 20px #20e2d7, 0 0 20px #20e2d7;
-        color: #434343;
-                } 
-                
-        /*------------------------------------whattsapp------------------*/  
-    .btn--4{
-        display: flex;
-        justify-content: space-around;
-        border-radius: 4px;
-        background-color: transparent;
-        transition: all 500ms ease;
-        border: 2px solid #0bee4f;
-        margin-bottom: 40px;
-        font-weight: 700;
-            }
-    .btn--4 a{
-        color:cornsilk;
-        text-decoration: none;
-        font-size: 30px;
-        font-family: 'Kirang Haerang', cursive;
-                }
-                
-    .btn--4:hover{
-            background-color: #0bee4f;
-            box-shadow: 0 0 10px #0bee4f, 0 0 20px #0bee4f, 0 0 20px #0bee4f;
-            color: #434343;
-                    } 
-                    
-     @media (max-width: 600px) {
-    .btn--1,.btn--2,.btn--3,.btn--4{
-    width: 50%;
-    padding: 10px;
-    }
-    }
 
 /* --------------------------------------------titulos cursos internacionales---------------------------------------------------------------*/
 .cursosint {
@@ -255,16 +204,11 @@ footer #pie-de-pagina{
 }
 /*-------------------------------------------------formulario-----------------------------------------------*/
 
- .form-contacto h1{
+ .form-contacto h2{
     text-align: center;
     color: cornsilk;
 }
-.borde{
-    width: 100px;
-    height: 10px;
-    background:transparent;
-    margin: 40px auto;
-}
+
 .form-contacto{
     max-width: 600px;
     margin:auto;
