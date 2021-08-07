@@ -1,127 +1,162 @@
 *{
     margin:0;
     padding: 0;
+    color: #9547a1;
+    font-family: 'Georama', sans-serif;
+ }
     
-    
-}
-/*-------------------------------------------------menu--------------------------------------------------------------------*/
-.navbar-collapse{
-    flex-direction: row-reverse !important;
-}
 /*----------------------------------------------------menu-------------------------------------------------------*/
-
+.header {
+    background-color: #5d6cb8;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding:010px;
+    line-height: 80px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 20px;
+    margin: 5px 5px;
+    line-height: 60px;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover{
+    background-color:#9547a1;
+    transition: 0.5s;
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px;
+    }
+  
+    .header {
+      height: 100%;
+    }
+  
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #2c3e50;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+      height:100%;
+      overflow-y: auto;
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #83c5f7;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
 /*----------------------------------------------------fondo------------------------------------------------------*/
 
-body{/*
-    background: #c33764; 
-    background: -webkit-linear-gradient(to right, #c33764, #1d2671); 
-    background: linear-gradient(to right, #c33764, #1d2671); 
-     */
-    background: rgb(206, 201, 201);
+body{
+    background: #ffffff;
 }
 /*-----------------------------------------------------fondo------------------------------------------------------*/
 
-/*---------------------------------------pie de pagina-----------------------------------------------------------------*/
 
-    .footer{/* contenedor principal*/
-        background-color:aquamarine;
-        position: absolute;/*para acomodarlo abajo*/
-        bottom: 0;
-        width: 100%;
-        color: white;
-        }
-    
-    .redes-sociales{ /*div redes sociales*/
-        display:flex;
-    }
-    .redes-sociales ul{
-        display:flex;
-        justify-content: center;
-        padding: 10px;
-        width: 100%;
-        height: 40px;
-        margin: auto;
-    }
-    .redes-sociales a{
-        padding: 10px;
-    }
-    .social-items{
-        list-style:none;
-    }
-    .social-items a{
-        padding: 10px 20px;
-        font-size: 35px;
-        color: white;
-    }
-    .fa-facebook-square:hover{ /*hover links redes sociales*/
-        color: blue;
-    }
-    .fa-instagram-square:hover{
-        color: violet;
-    }
-    .fa-twitter-square:hover{
-        color: rgba(38, 212, 235, 0);
-    }
-    
-    /*div redes sociales*/
-    
-    .link-footer{
-        background-color: brown;
-        display:flex;
-        margin: auto;
-        height: 75px;
-        width: 100%;
-    }
-    /*div redes*/
-    .link-footer ul{
-        display:flex;
-        justify-content: center;
-        padding: 10px;
-        width: 100%;
-        height: 30px;
-        margin: auto;
-        }
-    .quick-items{
-        list-style:none;
-    }
-    .quick-items a{
-        text-decoration:none;
-        padding: 10px 20px;
-        font-size: 18px;
-        color: azure;
-    }
-    .quick-items a:hover{
-        color: tomato;
-    }
-    /*div redes*/
-    
-    .mensaje-footer{
-        background-color: blue;
-        padding: 15px;
-        text-align: center;
-        font-size: 18px;
-        color: white;
-    }
-
- /* --------------------------------------------------------------------------------------------------------------------*/ 
 /*-----------------------------------------------------home-------------------------------------------------------*/
 
 .presentacion{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 200px;;
-    padding-left: 100px;
-    padding-right: 100px;
-    font-family: 'Kirang Haerang', cursive;
+    margin: 100px;
+    padding:100px ;
     font-size: 25px;
-    color: cornsilk;
-    
+    color: #9e9480;
+    height: 100%;
+    width: 100%;
+    }
+.presentacion p{
+   text-align: center;
 }
-
+@media (max-width: 600px) {
+	.presentacion p{
+        font-size: 14px;
+        text-align: center;
+    }
+	}
 /* --------------------------------------------titulos cursos internacionales---------------------------------------------------------------*/
 .cursosint {
-	margin: 0;
-	padding-top: 150px;
+    margin-top: 50px;
+	margin-bottom: 200px;
+	padding-top: 20px;
+    padding-bottom: 20px;
 	width: 100%;
 }
 
@@ -206,8 +241,8 @@ body{/*
 
  .form-contacto h2{
     text-align: center;
-    color: cornsilk;
-}
+    }
+    
 
 .form-contacto{
     max-width: 600px;
@@ -217,31 +252,35 @@ body{/*
     padding-top:150px;
     padding-bottom: 150px;
 }
+
 .texto-formulario{
     display: flex;
     width: 100%;
     box-sizing: border-box;
     margin: 15px 0;
     border: 0;
-    background:cornsilk;
+    background:white;
+    color:#946696;
     padding: 20px 40px;
-    color: blueviolet;
     transition: 0.5s;
+    border:1px solid #946696;
 }
+
 .texto-formulario:hover{
     box-shadow: 0 0 10px 4px #2980b9;
 }
 textarea.texto-formulario{
 resize: none;
 height: 120px;
-color: blueviolet;
+color: #946696;
 font-size: 15px;
 }
 
 .formulario-btn{
     float: right;
     border: 0;
-    background:cornsilk;
+    background:#946696;
+    color: white;
     padding: 12px 50px;
     border-radius: 20px;
     cursor: pointer;
@@ -257,31 +296,31 @@ font-size: 15px;
 
 /*---------------------------------------------------cursos--------------------------------------------------*/
 .cursos{
-    width: 100%;
-    height: 100%;
-    font-family: 'Kirang Haerang', cursive;
-    color: cornsilk;
-
-}
+    
+	margin-bottom: 200px;
+	padding-top: 20px;
+    padding-bottom: 20px;
+	width: 100%;
+    }
 .cursos p{
     text-align: center;
     font-size: 20px;
 }
 .titulo{
     text-align: center;
-    margin-top: 150px;
     }
 .container-curs{
+
     width: 100%;
+    padding-top: 10px;
     max-width: 1200px;
-    height: 430px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
     }
 
-.tipo{
+.card2{
     width: 500px;
     height: 500px;
     border-radius: 10px;
@@ -291,20 +330,20 @@ font-size: 15px;
     text-align: center;
     transition: 0.5s;
 }
-.tipo:hover{
+.card2:hover{
     transform: translateY(-15px);
 }
-.tipo img{
+.card2 img{
     width: 300px;
     height: 200px;
 }
-.tipo h2{
+.card2 h2{
     font-size: 25px;
 }
-.tipo p{
+.card2 p{
     font-size: 20px;
 }
-.tipo a{
+.card2 a{
     font-size: 20px;
     text-decoration: none;
     float: right;
@@ -315,19 +354,18 @@ font-size: 15px;
 /*---------------------------------------------------cursos--------------------------------------------------*/
  /*------------------------------------------------conversacion--------------------------------------------*/
 .conversacion{
-    width: 100%;
-    height: 100%;
-    font-family: 'Kirang Haerang', cursive;
-   color:cornsilk;
-
-}
+    margin-bottom: 200px;
+	padding-top: 20px;
+    padding-bottom: 150px;
+	width: 100%;
+    }
 .conversacion p{
     text-align: center;
     font-size: 20px;
 }
 .titulo{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 50px;
     }
 .container-conv{
     width: 100%;
@@ -338,8 +376,7 @@ font-size: 15px;
     justify-content: center;
     margin: auto;
 }
-
-.tipo{
+.card2{
     width: 500px;
     height: 500px;
     border-radius: 10px;
@@ -349,20 +386,20 @@ font-size: 15px;
     text-align: center;
     transition: 0.5s;
 }
-.tipo:hover{
+.card2:hover{
     transform: translateY(-15px);
 }
-.tipo img{
+.card2 img{
     width: 300px;
     height: 200px;
 }
-.tipo h2{
+.card2 h2{
     font-size: 25px;
 }
-.tipo p{
+.card2 p{
     font-size: 20px;
 }
-.tipo a{
+.card2 a{
     font-size: 20px;
     text-decoration: none;
     float: right;
@@ -371,3 +408,85 @@ font-size: 15px;
 }
 
 /*--------------------------conversacion--------------------------------------------*/
+
+/*---------------------------------------pie de pagina-----------------------------------------------------------------*/
+
+.footer{/* contenedor principal*/
+    background-color:#946696;
+    position: fixed;/*para acomodarlo abajo*/
+    bottom: 0;
+    width: 100%;
+    color: white;
+    }
+
+.redes-sociales{ /*div redes sociales*/
+    display:flex;
+    height: auto;
+}
+.redes-sociales ul{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.redes-sociales a{
+    padding: 10px;
+}
+.social-items{
+    list-style:none;
+    color: white;
+}
+.social-items a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: white;
+}
+.fa-facebook-square:hover{ /*hover links redes sociales*/
+    color: blue;
+}
+.fa-instagram-square:hover{
+    color: violet;
+}
+/*div redes sociales*/
+
+.link-footer{
+    background-color: #9547a1;
+    display:flex;
+    margin: auto;
+    height: auto;
+    width: 100%;
+}
+/*div redes*/
+.link-footer ul{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    }
+.quick-items{
+    list-style:none;
+}
+.quick-items a{
+    text-decoration:none;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: azure;
+}
+.quick-items a:hover{
+    color: #9e9480;
+}
+/*div redes*/
+
+.mensaje-footer{
+    background-color:#5d6cb8;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------*/ 
