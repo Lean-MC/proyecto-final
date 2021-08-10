@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "bueno , agrege seo.. keywords y deje todo responsive, me faltan algunas cosas que en breve las voy a mejorar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lean-MC/proyecto-final.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lean-MC/proyecto-final/issues"
+  },
+  "homepage": "https://github.com/Lean-MC/proyecto-final#readme"
+}
