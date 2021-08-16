@@ -79,12 +79,13 @@ $fontszp:18px;
  /* MOBILE */
  @media (max-width: 800px) {
     body {
-      padding-top: 70px;
+      
       height: 100%;
       width: 100%;
     }
   
     .header {
+      padding-top: -70px;
       height: 100%;
       width: 100%;
     }
@@ -101,13 +102,13 @@ $fontszp:18px;
       margin: 0;
       background-color: $colorbg3;
       position: fixed;
-      top: 60px;
       width: 100%;
       padding: 20px 0;
       height:100%;
       overflow-y: auto;
       left: 100%;
       transition: left 0.3s;
+    
     }
   
     .nav-menu-item {
@@ -196,26 +197,26 @@ body{
 }
 .titulo-int {
 	color: black;
-	background-color: #E6EBE0;
+	background-color: $colorbg2;
     padding-bottom:20px; 
 }
 .info-int {
 	color: black;
-	background-color: #F4F1BB;
+	background-color: $colorbg3;
 }
 .c1 {
 	color: black;
-	background-color: #9BC1BC;
+	background-color: $colorbg6;
 }
 
 .c2 {
 	color: black;
-	background-color: #36C9C6;
+	background-color: $colorbg;
 }
 
 .c3 {
 	color: $colorbg5;
-	background-color: #ED6A5A;
+	background-color: $colorbg2;
 }
 .cursosint {
 	display: -webkit-flex;

@@ -70,7 +70,7 @@
 /* MOBILE */
 @media (max-width: 800px) {
   body {
-    padding-top: 70px;
+    padding-top: -70px;
     height: 100%;
     width: 100%;
   }
@@ -181,18 +181,18 @@ body {
 
 .titulo-int {
   color: black;
-  background-color: #E6EBE0;
+  background-color: #5d6cb8;;
   padding-bottom: 20px;
 }
 
 .info-int {
   color: black;
-  background-color: #F4F1BB;
+  background-color: #83c5f7;
 }
 
 .c1 {
   color: black;
-  background-color: #9BC1BC;
+  background-color: #946696;
 }
 
 .c2 {
@@ -202,7 +202,7 @@ body {
 
 .c3 {
   color: #ffffff;
-  background-color: #ED6A5A;
+  background-color: #9547a1;
 }
 
 .cursosint {
